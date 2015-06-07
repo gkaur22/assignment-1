@@ -1,0 +1,38 @@
+<html>
+<head>
+<Style>
+body{background-color:lightblue;}
+h1 {color:green}
+p {color:blue;font-size:16pt;}
+</Style>
+<title>Sum</title>
+<script type="text/javascript">
+  function sum()
+{
+    var num1 = document.myform.number1.value;
+    var num2 = document.myform.number2.value;
+    var sum = parseInt(num1) + parseInt(num2);
+    document.getElementById('add').value = sum;
+}
+</script>
+</head>
+
+<body>
+<h1 style="font-family:arial;text-align="center";font-size:20pt;>
+This HTML Page shows ability to add any two numbers and display results 
+</h1>
+<br><br>
+<p>Enter numbers and click Add to view result.</p>
+<FORM NAME="myform">
+    First Number<INPUT TYPE="text" NAME="number1" VALUE=""/> 
+	<br> 
+	+ 
+	<br>
+	Second Number<INPUT TYPE="text" NAME="number2" VALUE=""/>
+	<br><br>
+    <INPUT TYPE="button" NAME="button" Value="Add" onClick="sum()"/>
+	<br><br>
+    Result<INPUT TYPE="text" ID="add" NAME="result" VALUE=""/>
+</FORM>
+</body>
+</html>
